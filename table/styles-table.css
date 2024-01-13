@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f2d2bf;
+    z-index: 1;
+    width: 200px;
+    padding: 5px 15px; 
+}
+
+/* Header Navigation Styles */
+.header-nav {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s linear;
+    margin-right: 50px;
+}
+
+.header-nav:hover {
+    color: #fc9b4c;
+}
+
+/* Input Styles */
+input {
+    display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+    [for=burger] {
+        display: block;
+        width: 30px;
+        text-align: center;
+    }
+    [for=burger]::before {
+        font-size: 35px;
+        content: '☰';
+        cursor: pointer;
+    }
+    .nav {
+        display: none;
+        position: fixed;
+        margin-top: 30px;
+        background: rgba(216, 243, 253, 0.692);
+        width: 200px;
+        z-index: 10;
+        user-select: none;
+        padding-right: 45px;
+        padding-top: 10px;
+    }
+    .header-nav {
+        margin: 0;
+        padding: 0;
+    }
+    label {
+        position: absolute;
+        top: 45px;
+        right: 12px;
+        z-index: 11;
+    }
+    #burger:checked + label + .nav {
+        display: block;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        animation: show .5s ease;
+    }
+    #burger:checked +[for=burger]::before {
+        content: '⮾';
+    }
+}
+
+/* Table Styles */
+table {
+    display: table;
+    border-collapse: collapse;
+    border-color: gray;
+    height: 100vh;
+}
+
+.for-box{
+    display: table-row;
+    height: 90px;
+}
+
+.for-box td {
+    display: table-cell;
+    vertical-align: middle; /* Це забезпечить вертикальне вирівнювання контенту в середині ячейки */
+}
+/* Table Header Cell Styles */
+th {
+    padding: 0 25px;
+}
+
+/* Additional Styles */
+.footer__text, .box {
+    text-align: center;
+}
+
+.navbar {
+    text-align: right;
+}
+.main {
+    padding: 100px 50px;
+}
+
+/* Header and Footer Styles */
+.header, .footer {
+    background-color: #8bbdd9;
+    height: 140px;
+    padding: 0 20px;
+}
+
+/* Box Styles */
+.box {
+    background-color: #b4c7a7;
+}
+
+.white_bg{
+    font-size: 24px;
+    background-color: white;
+    padding: 15px;
+}

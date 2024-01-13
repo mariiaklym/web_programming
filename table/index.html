@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-table.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="header">
+                <th><div class="white_bg">Гаррі Поттер</div></th>
+                <td class="navbar" colspan="2">
+                    <div class="">
+                        <input type="checkbox" id="burger">
+                        <label for="burger"></label>
+                        <nav class="nav">
+                            <a href="#" class="header-nav">Ґрифіндор</a>
+                            <a href="#" class="header-nav">Рейвенклов</a>
+                            <a href="#" class="header-nav">Гафелпаф</a>
+                            <a href="#" class="header-nav">Слизерин</a>
+                        </nav>
+                    </div>
+                    
+                </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="for-box">
+            <td rowspan=" 3" class="sidebar">
+                Коли вечір опускається на давній замок, його вежі та башти освітлюються м'яким світлом зірок. Це час для секретних зустрічей у затишних кімнатах і підготовки до магічних уроків, які допоможуть молодим чарівникам стати майстрами своєї справи. Тут, серед безлічі коридорів, кожен крок може вести до нових відкриттів та пригод.
+            </td>
+            <td colspan="2" class="box">Школа для юних магів і чарівників вітає нових учнів. Приєднуйтеся до нас і відкрий свої здібності.</td>
+            </tr>
+
+            <tr>
+                <td class="main">Древній замок на вершині скелястого острова є домом для найбільш талановитих і сміливих молодих магів з усього світу. За його стінами ви знайдете найглибші таємниці магічного світу та дізнаєтесь про історії, які переплелися з коридорами і вежами цієї древньої фортеці.
+            </td>
+            <td rowspan="2" class="sidebar">Кожен магічний факультет має свою гордість і традиції. Відважність, мудрість, чесність та хитрість — цінності, які ми виховуємо в наших учнях, готуючи їх до життя, сповненого магії.</td>
+            </tr>
+
+            <tr class="for-box">
+                <td class="box">Спортивні змагання на мітлах і дуелі магічною паличкою відкривають перед учнями нові горизонти змагальності та товариства. Захопливі матчі та дружні поєдинки — невід'ємна частина нашого магічного співтовариства.</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr class="footer">
+                <td colspan="2" class="footer__text">Запрошуємо вас відвідати нашу бібліотеку стародавніх заклять і рукописів, де кожна книга веде до нових відкриттів і загадкових пригод.</td>
+                <th><div class="white_bg">Хлопець, який вижив</div></th>
+            </tr>
+        </tfoot>
+
+    </table>
+      
+</body>
+</html>
