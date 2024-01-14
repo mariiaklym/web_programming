@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	background: #edf4fd;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	height: 65px;
+	width: 100%;
+	background: #ffffff;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.header :nth-child(n) {
+	display: block;
+}
+
+.strip {
+	position: absolute;
+	top: 140px;
+	height: 175px;
+	width: 100%;
+	background: #fa9746;
+}
+
+.header__logo {
+	color: #bbbbbb;
+}
+
+.header__menu {
+	color: #000000;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 110px;
+	width: 100%;
+	font-size: 8px;
+	color: #ffffff;
+	background: #333333;
+	margin-top: 40px;
+}
+
+.footer__inner {
+	text-align: center;
+	max-width: 230px;
+}
+
+.services__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	margin-top: 55px;
+}
+
+.services__container {
+	position: relative;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+}
+
+.services__name {
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-size: 35px;
+	color: #5595e8;
+}
+
+.services__text {
+	margin-top: 40px;
+	max-width: 600px;
+	text-align: center;
+	padding: 0 50px;
+	font-size: 10px;
+}
+
+.service__icon {
+	margin-top: 50px;
+}
+
+.service__name {
+	margin-top: 45px;
+	color: #5595e8;
+}
+.service__text {
+	margin-top: 35px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.service__link {
+	margin-top: 30px;
+	padding: 10px 25px;
+	color: #ffffff;
+	background: #fa9746;
+	text-transform: uppercase;
+	font-weight: 900;
+	border-radius: 5px;
+	border: 2px solid transparent;
+}
+
+.service__link:hover {
+	color: #fa9746;
+	background: #ffffff;
+	border: 2px solid #fa9746;
+}
+
+.service__link:active {
+	color: #ffffff;
+	background: #bb753c;
+	border: 2px solid transparent;
+}
+
+.service {
+	width: 280px;
+	height: 450px;
+	margin: 35px 20px 0 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background: #ffffff;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 25px;
+}
